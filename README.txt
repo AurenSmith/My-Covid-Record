@@ -1,3 +1,7 @@
+To open the application go to:
+"QT Design Studio > Open Project" > "MyCovidRecord > MyCovidRecord.qmlproject"
+
+TODO:
 PAGES {
   Login {
     Sign up
