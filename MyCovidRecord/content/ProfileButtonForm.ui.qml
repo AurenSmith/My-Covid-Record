@@ -14,6 +14,10 @@ Item {
     width: 349
     height: 767
     visible: true
+    property alias animation6: animation6
+    property alias animation5: animation5
+    property alias animation4: animation4
+    property alias animation3: animation3
     property alias resultsButton: resultsButton
     property alias resultsDropdown: resultsDropdown
     property alias vaccineDropdown: vaccineDropdown
@@ -595,22 +599,48 @@ COVID-19")
             height: 101
         }
 
-        NumberAnimation {
+        SequentialAnimation {
             id: animation3
-            target: vaccines
-            property: "border.width"
-            alwaysRunToEnd: true
-            to: 4
-            from: 0
+
+            NumberAnimation {
+                id: selectAnim3
+                target: vaccines
+                property: "border.width"
+                alwaysRunToEnd: true
+                to: 4
+                from: 0
+            }
+
+            NumberAnimation {
+                id: numberAnimation1
+                target: vaccineDropdown
+                property: "height"
+                alwaysRunToEnd: true
+                to: 513
+                from: 0
+            }
         }
 
-        NumberAnimation {
+        SequentialAnimation {
             id: animation4
-            target: vaccines
-            property: "border.width"
-            alwaysRunToEnd: true
-            to: 0
-            from: 4
+
+            NumberAnimation {
+                id: selectAnim4
+                target: vaccines
+                property: "border.width"
+                alwaysRunToEnd: true
+                to: 0
+                from: 4
+            }
+
+            NumberAnimation {
+                id: numberAnimation2
+                target: vaccineDropdown
+                property: "height"
+                alwaysRunToEnd: true
+                to: 0
+                from: 513
+            }
         }
     }
 
@@ -638,7 +668,6 @@ COVID-19")
             font.weight: Font.Bold
             font.family: "Fira Sans"
         }
-
 
         Text {
             id: text21
@@ -836,25 +865,47 @@ COVID-19")
             height: 101
         }
 
-        NumberAnimation {
+        SequentialAnimation {
             id: animation5
-            target: results
-            property: "border.width"
-            alwaysRunToEnd: true
-            to: 4
-            from: 0
+
+            NumberAnimation {
+                id: selectAnim5
+                target: results
+                property: "border.width"
+                alwaysRunToEnd: true
+                to: 4
+                from: 0
+            }
+
+            NumberAnimation {
+                id: expandAnim5
+                target: resultsDropdown
+                property: "height"
+                alwaysRunToEnd: true
+                to: 438
+                from: 0
+            }
         }
 
-        NumberAnimation {
+        SequentialAnimation {
             id: animation6
-            target: results
-            property: "border.width"
-            to: 0
-            from: 4
+
+            NumberAnimation {
+                id: selectAnim6
+                target: results
+                property: "border.width"
+                to: 0
+                from: 4
+            }
+
+            NumberAnimation {
+                id: numberAnimation3
+                target: resultsDropdown
+                property: "height"
+                alwaysRunToEnd: true
+                to: 0
+                from: 438
+            }
         }
     }
-
-
 }
-
-

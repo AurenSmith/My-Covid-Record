@@ -2,28 +2,31 @@ import QtQuick 2.15
 
 ProfileButtonForm {
     id: profileForm
+
     property bool profileSelected: false
     property bool vaccineSelected: false
     property bool resultsSelected: false
 
     profileButton.onClicked: {
-        profileForm.profileSelected = !profileForm.profileSelected
-
         function expandProfile() {
-            if(profileForm.profileSelected == true) {
-                //Expand Profile
-                animation1.start()
-                vaccines.y = 555
-                results.y = 666
-                profileDropdown.visible = true
+            if(profileForm.vaccineSelected == false && profileForm.resultsSelected == false) {
+                profileForm.profileSelected = !profileForm.profileSelected
 
-                return
+                if(profileForm.profileSelected == true) {
+                    //Expand Profile
+                    animation1.start()
+                    vaccines.y = 555
+                    results.y = 666
+                    profileDropdown.visible = true
+
+                    return
+                }
+                //Despand Profile
+                animation2.start()
+                vaccines.y = 111
+                results.y = 222
+                profileDropdown.visible = false
             }
-            //Despand Profile
-            animation2.start()
-            vaccines.y = 111
-            results.y = 222
-            profileDropdown.visible = false
             return
         }
 
@@ -31,19 +34,23 @@ ProfileButtonForm {
     }
 
     vaccineButton.onClicked: {
-        profileForm.vaccineSelected = !profileForm.vaccineSelected
-
         function expandVaccine() {
-            if(profileForm.vaccineSelected == true) {
-                //Expand Vaccine
-                results.y = 634
-                vaccineDropdown.visible = true
+            if(profileForm.profileSelected == false && profileForm.resultsSelected == false) {
+                profileForm.vaccineSelected = !profileForm.vaccineSelected
 
-                return
+                if(profileForm.vaccineSelected == true) {
+                    //Expand Vaccine
+                    animation3.start()
+                    results.y = 634
+                    vaccineDropdown.visible = true
+
+                    return
+                }
+                //Despand Profile
+                animation4.start()
+                results.y = 222
+                vaccineDropdown.visible = false
             }
-            //Despand Profile
-            results.y = 222
-            vaccineDropdown.visible = false
             return
         }
 
@@ -51,18 +58,21 @@ ProfileButtonForm {
     }
 
     resultsButton.onClicked: {
-        profileForm.resultsSelected = !profileForm.resultsSelected
-
         function expandResults() {
-            if(profileForm.resultsSelected == true) {
-                //Expand Vaccine
-                resultsDropdown.visible = true
+            if(profileForm.profileSelected == false && profileForm.vaccineSelected == false) {
+                profileForm.resultsSelected = !profileForm.resultsSelected
 
-                return
+                if(profileForm.resultsSelected == true) {
+                    //Expand Vaccine
+                    animation5.start()
+                    resultsDropdown.visible = true
+
+                    return
+                }
+                //Despand Profile
+                animation6.start()
+                resultsDropdown.visible = false
             }
-            //Despand Profile
-            resultsDropdown.visible = false
-
             return
         }
 
