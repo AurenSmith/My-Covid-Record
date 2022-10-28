@@ -13,6 +13,11 @@ Item {
     property alias profileButton: profileButton
     width: 349
     height: 767
+    visible: true
+    property alias resultsButton: resultsButton
+    property alias resultsDropdown: resultsDropdown
+    property alias vaccineDropdown: vaccineDropdown
+    property alias vaccineButton: vaccineButton
     property alias profile: profile
     property alias results: results
     property alias vaccines: vaccines
@@ -311,6 +316,224 @@ Item {
     }
 
     Rectangle {
+        id: vaccineDropdown
+        x: 4
+        y: 111
+        width: 341
+        height: 513
+        visible: false
+        color: "#ffffff"
+        radius: 23
+        border.width: 0
+
+        Text {
+            id: text11
+            x: 19
+            y: 113
+            width: 311
+            height: 19
+            color: "#002e6e"
+            text: qsTr("Dose 2")
+            font.pixelSize: 16
+            verticalAlignment: Text.AlignVCenter
+            font.weight: Font.Bold
+            font.family: "Fira Sans"
+        }
+
+        Text {
+            id: text12
+            x: 19
+            y: 139
+            width: 311
+            height: 19
+            color: "#002e6e"
+            text: qsTr("16 October 2021")
+            font.pixelSize: 16
+            verticalAlignment: Text.AlignVCenter
+            font.styleName: "Regular"
+            font.weight: Font.Normal
+            font.family: "Fira Sans"
+        }
+
+        Rectangle {
+            id: rectangle5
+            x: 19
+            y: 179
+            width: 311
+            height: 1
+            color: "#e7f1f9"
+            border.width: 0
+            anchors.verticalCenter: text7.verticalCenter
+            anchors.left: text7.left
+            anchors.right: text7.right
+            anchors.rightMargin: 0
+            anchors.verticalCenterOffset: -28
+            anchors.leftMargin: 0
+        }
+
+        Text {
+            id: text13
+            x: 19
+            y: 198
+            width: 311
+            height: 19
+            color: "#002e6e"
+            text: qsTr("Place administered")
+            font.pixelSize: 16
+            verticalAlignment: Text.AlignVCenter
+            font.weight: Font.Bold
+            font.family: "Fira Sans"
+        }
+
+        Text {
+            id: text14
+            x: 19
+            y: 230
+            width: 311
+            height: 19
+            color: "#002e6e"
+            text: qsTr("New Zealand")
+            font.pixelSize: 16
+            verticalAlignment: Text.AlignVCenter
+            font.styleName: "Regular"
+            font.weight: Font.Normal
+            font.family: "Fira Sans"
+        }
+
+        Rectangle {
+            id: rectangle6
+            x: 19
+            y: 263
+            width: 311
+            height: 1
+            color: "#e7f1f9"
+            border.width: 0
+            anchors.verticalCenter: text7.verticalCenter
+            anchors.left: text7.left
+            anchors.right: text7.right
+            anchors.rightMargin: 0
+            anchors.verticalCenterOffset: -28
+            anchors.leftMargin: 0
+        }
+
+        Text {
+            id: text15
+            x: 15
+            y: 283
+            width: 311
+            height: 19
+            color: "#002e6e"
+            text: qsTr("Manufacturer")
+            font.pixelSize: 16
+            verticalAlignment: Text.AlignVCenter
+            font.weight: Font.Bold
+            font.family: "Fira Sans"
+        }
+
+        Text {
+            id: text16
+            x: 15
+            y: 308
+            width: 311
+            height: 19
+            color: "#002e6e"
+            text: qsTr("Pfizer-BioNTech")
+            font.pixelSize: 16
+            verticalAlignment: Text.AlignVCenter
+            font.styleName: "Regular"
+            font.weight: Font.Normal
+            font.family: "Fira Sans"
+        }
+
+        Rectangle {
+            id: rectangle7
+            x: 19
+            y: 348
+            width: 311
+            height: 1
+            color: "#e7f1f9"
+            border.width: 0
+            anchors.verticalCenter: text7.verticalCenter
+            anchors.left: text7.left
+            anchors.right: text7.right
+            anchors.rightMargin: 0
+            anchors.verticalCenterOffset: -28
+            anchors.leftMargin: 0
+        }
+
+        Text {
+            id: text17
+            x: 19
+            y: 368
+            width: 311
+            height: 19
+            color: "#002e6e"
+            text: qsTr("Batch Number")
+            font.pixelSize: 16
+            verticalAlignment: Text.AlignVCenter
+            font.weight: Font.Bold
+            font.family: "Fira Sans"
+        }
+
+        Text {
+            id: text18
+            x: 19
+            y: 393
+            width: 311
+            height: 19
+            color: "#002e6e"
+            text: qsTr("FJ8372")
+            font.pixelSize: 16
+            verticalAlignment: Text.AlignVCenter
+            font.styleName: "Regular"
+            font.weight: Font.Normal
+            font.family: "Fira Sans"
+        }
+
+        Rectangle {
+            id: rectangle8
+            x: 19
+            y: 433
+            width: 311
+            height: 1
+            color: "#e7f1f9"
+            border.width: 0
+            anchors.verticalCenter: text7.verticalCenter
+            anchors.left: text7.left
+            anchors.right: text7.right
+            anchors.rightMargin: 0
+            anchors.verticalCenterOffset: -28
+            anchors.leftMargin: 0
+        }
+
+        Image {
+            id: image5
+            x: 18
+            y: 446
+            width: 304
+            height: 48
+            source: "assets/Light Button.png"
+            fillMode: Image.PreserveAspectFit
+
+            Text {
+                id: text19
+                x: 0
+                y: 0
+                width: 304
+                height: 48
+                color: "#002e6e"
+                text: qsTr("Book A Vaccine")
+                font.pixelSize: 17
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                font.family: "Fira Sans"
+                font.styleName: "Bold"
+                font.weight: Font.Bold
+            }
+        }
+    }
+
+    Rectangle {
         id: vaccines
         x: 0
         y: 111
@@ -392,6 +615,176 @@ COVID-19")
     }
 
     Rectangle {
+        id: resultsDropdown
+        x: 4
+        y: 222
+        width: 341
+        height: 438
+        visible: false
+        color: "#ffffff"
+        radius: 23
+        border.width: 0
+
+        Text {
+            id: text20
+            x: 19
+            y: 111
+            width: 311
+            height: 19
+            color: "#002e6e"
+            text: qsTr("Test Date")
+            font.pixelSize: 16
+            verticalAlignment: Text.AlignVCenter
+            font.weight: Font.Bold
+            font.family: "Fira Sans"
+        }
+
+
+        Text {
+            id: text21
+            x: 19
+            y: 137
+            width: 311
+            height: 19
+            color: "#002e6e"
+            text: qsTr("16 October 2021")
+            font.pixelSize: 16
+            verticalAlignment: Text.AlignVCenter
+            font.styleName: "Regular"
+            font.weight: Font.Normal
+            font.family: "Fira Sans"
+        }
+
+        Rectangle {
+            id: rectangle9
+            x: 19
+            y: 177
+            width: 311
+            height: 1
+            color: "#e7f1f9"
+            border.width: 0
+            anchors.verticalCenter: text7.verticalCenter
+            anchors.left: text7.left
+            anchors.right: text7.right
+            anchors.rightMargin: 0
+            anchors.verticalCenterOffset: -28
+            anchors.leftMargin: 0
+        }
+
+        Text {
+            id: text22
+            x: 19
+            y: 196
+            width: 311
+            height: 19
+            color: "#002e6e"
+            text: qsTr("Result")
+            font.pixelSize: 16
+            verticalAlignment: Text.AlignVCenter
+            font.weight: Font.Bold
+            font.family: "Fira Sans"
+        }
+
+        Text {
+            id: text23
+            x: 19
+            y: 228
+            width: 311
+            height: 19
+            color: "#002e6e"
+            text: qsTr("Negative")
+            font.pixelSize: 16
+            verticalAlignment: Text.AlignVCenter
+            font.styleName: "Regular"
+            font.weight: Font.Normal
+            font.family: "Fira Sans"
+        }
+
+        Rectangle {
+            id: rectangle10
+            x: 19
+            y: 261
+            width: 311
+            height: 1
+            color: "#e7f1f9"
+            border.width: 0
+            anchors.verticalCenter: text7.verticalCenter
+            anchors.left: text7.left
+            anchors.right: text7.right
+            anchors.rightMargin: 0
+            anchors.verticalCenterOffset: -28
+            anchors.leftMargin: 0
+        }
+
+        Image {
+            id: image6
+            x: 22
+            y: 282
+            width: 304
+            height: 48
+            source: "assets/Thin Button.png"
+            fillMode: Image.PreserveAspectFit
+
+            Text {
+                id: text24
+                x: 0
+                y: 0
+                width: 304
+                height: 48
+                color: "#ffffff"
+                text: qsTr("Report a RAT result")
+                font.pixelSize: 18
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                font.weight: Font.Bold
+                font.family: "Fira Sans"
+            }
+        }
+
+        Image {
+            id: image7
+            x: 22
+            y: 340
+            width: 304
+            height: 48
+            source: "assets/Light Button.png"
+            mirror: false
+            autoTransform: false
+            rotation: 0
+            fillMode: Image.PreserveAspectFit
+
+            Text {
+                id: text25
+                x: 0
+                y: 0
+                width: 304
+                height: 48
+                color: "#002e6e"
+                text: qsTr("Order a Free RAT Test")
+                font.pixelSize: 18
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                font.weight: Font.Bold
+                font.family: "Fira Sans"
+            }
+        }
+
+        Text {
+            id: text26
+            x: 47
+            y: 398
+            width: 245
+            height: 40
+            color: "#766161"
+            text: "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\nhr { height: 1px; border-width: 0; }\n</style></head><body style=\" font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Report a rapid antigen test result (RAT) for </p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">yourself and others.</p></body></html>"
+            font.pixelSize: 12
+            horizontalAlignment: Text.AlignHCenter
+            textFormat: Text.RichText
+            clip: false
+        }
+    }
+
+    Rectangle {
         id: results
         x: 0
         y: 222
@@ -460,4 +853,8 @@ COVID-19")
             from: 4
         }
     }
+
+
 }
+
+
