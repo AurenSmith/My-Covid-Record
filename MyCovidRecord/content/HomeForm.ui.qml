@@ -15,7 +15,7 @@ Rectangle {
     property alias profileButton: profileButton
 
     width: Constants.width
-    height: 925
+    height: 1257
     anchors.bottom: ProfileButton.bottom
     property alias sideButton: sideButton
     color: "#e3f3ff"
@@ -82,7 +82,7 @@ Rectangle {
         x: 375
         y: 0
         width: 17
-        height: 925
+        height: 1257
         color: "#ffffff"
     }
 }

@@ -17,6 +17,10 @@ ProfileButtonForm {
                     animation1.start()
                     vaccines.y = 555
                     results.y = 666
+                    requestPass.y = 779
+                    help.y = 1003
+                    logOut.y = 1114
+                    privacy.y = 1174
                     profileDropdown.visible = true
 
                     return
@@ -25,6 +29,10 @@ ProfileButtonForm {
                 animation2.start()
                 vaccines.y = 111
                 results.y = 222
+                requestPass.y = 335
+                help.y = 559
+                logOut.y = 670
+                privacy.y = 730
                 profileDropdown.visible = false
             }
             return
@@ -42,6 +50,10 @@ ProfileButtonForm {
                     //Expand Vaccine
                     animation3.start()
                     results.y = 634
+                    requestPass.y = 747
+                    help.y = 971
+                    logOut.y = 1082
+                    privacy.y = 1142
                     vaccineDropdown.visible = true
 
                     return
@@ -49,6 +61,10 @@ ProfileButtonForm {
                 //Despand Profile
                 animation4.start()
                 results.y = 222
+                requestPass.y = 335
+                help.y = 559
+                logOut.y = 670
+                privacy.y = 730
                 vaccineDropdown.visible = false
             }
             return
@@ -65,12 +81,20 @@ ProfileButtonForm {
                 if(profileForm.resultsSelected == true) {
                     //Expand Vaccine
                     animation5.start()
+                    requestPass.y = 670
+                    help.y = 894
+                    logOut.y = 1005
+                    privacy.y = 1065
                     resultsDropdown.visible = true
 
                     return
                 }
                 //Despand Profile
                 animation6.start()
+                requestPass.y = 335
+                help.y = 559
+                logOut.y = 670
+                privacy.y = 730
                 resultsDropdown.visible = false
             }
             return
