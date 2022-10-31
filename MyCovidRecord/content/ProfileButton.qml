@@ -34,7 +34,34 @@ ProfileButtonForm {
                 logOut.y = 670
                 privacy.y = 730
                 profileDropdown.visible = false
+            } else {
+                //another already selected
+                if(profileForm.vaccineSelected == true) {
+                    //Despand Vaccines
+                    animation4.start()
+                    results.y = 222
+                    requestPass.y = 335
+                    help.y = 559
+                    logOut.y = 670
+                    privacy.y = 730
+                    vaccineDropdown.visible = false
+
+                    profileForm.vaccineSelected = false
+                } else if(profileForm.resultsSelected == true) {
+                    //Despand Results
+                    animation6.start()
+                    requestPass.y = 335
+                    help.y = 559
+                    logOut.y = 670
+                    privacy.y = 730
+                    resultsDropdown.visible = false
+
+                    profileForm.resultsSelected = false
+                }
+
+                expandProfile()
             }
+
             return
         }
 
@@ -66,7 +93,35 @@ ProfileButtonForm {
                 logOut.y = 670
                 privacy.y = 730
                 vaccineDropdown.visible = false
+            } else {
+                //another already selected
+                if(profileForm.profileSelected == true) {
+                    //Despand Profile
+                    animation2.start()
+                    vaccines.y = 111
+                    results.y = 222
+                    requestPass.y = 335
+                    help.y = 559
+                    logOut.y = 670
+                    privacy.y = 730
+                    profileDropdown.visible = false
+
+                    profileForm.profileSelected = false
+                } else if(profileForm.resultsSelected == true) {
+                    //Despand Results
+                    animation6.start()
+                    requestPass.y = 335
+                    help.y = 559
+                    logOut.y = 670
+                    privacy.y = 730
+                    resultsDropdown.visible = false
+
+                    profileForm.resultsSelected = false
+                }
+
+                expandVaccine()
             }
+
             return
         }
 
@@ -96,7 +151,36 @@ ProfileButtonForm {
                 logOut.y = 670
                 privacy.y = 730
                 resultsDropdown.visible = false
+            } else {
+                //another already selected
+                if(profileForm.profileSelected == true) {
+                    //Despand Profile
+                    animation2.start()
+                    vaccines.y = 111
+                    results.y = 222
+                    requestPass.y = 335
+                    help.y = 559
+                    logOut.y = 670
+                    privacy.y = 730
+                    profileDropdown.visible = false
+
+                    profileForm.profileSelected = false
+                } else if(profileForm.vaccineSelected == true) {
+                    //Despand Vaccines
+                    animation4.start()
+                    results.y = 222
+                    requestPass.y = 335
+                    help.y = 559
+                    logOut.y = 670
+                    privacy.y = 730
+                    vaccineDropdown.visible = false
+
+                    profileForm.vaccineSelected = false
+                }
+
+                expandResults()
             }
+
             return
         }
 
