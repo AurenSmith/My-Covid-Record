@@ -1,0 +1,40 @@
+# ninja log v5
+10	30	0	C:/Users/Auren/3D Objects/build-MyCovidRecord-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	aa1d7ffda6b99873
+336	371	6891277960326892	CMakeFiles/MyCovidRecord.dir/MyCovidRecord_autogen/mocs_compilation.cpp.obj	9bdf2a17e2bab4e9
+7	172	6898570511299001	C:/Users/Auren/3D Objects/build-MyCovidRecord-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/MyCovidRecord_autogen/timestamp	b1d6fa7ee6ef387c
+7	172	6898570511299001	C:/Users/Auren/3D Objects/build-MyCovidRecord-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/MyCovidRecord_autogen/mocs_compilation.cpp	b1d6fa7ee6ef387c
+4	82	6891277957426228	.qt_plugins/Qt6_QmlPlugins_Imports_MyCovidRecord.cmake	25f4f9ce4da85834
+7	50	6898571670316535	C:/Users/Auren/3D Objects/build-MyCovidRecord-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/MyCovidRecord_autogen/EWIEGA46WW/qrc_qml.cpp	996351bdedbb3695
+4	82	6891277957426228	C:/Users/Auren/3D Objects/build-MyCovidRecord-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/.qt_plugins/Qt6_QmlPlugins_Imports_MyCovidRecord.cmake	25f4f9ce4da85834
+7	50	6898571670316535	MyCovidRecord_autogen/EWIEGA46WW/qrc_qml.cpp	996351bdedbb3695
+7	172	6898570511299001	MyCovidRecord_autogen/timestamp	b1d6fa7ee6ef387c
+7	172	6898570511299001	MyCovidRecord_autogen/mocs_compilation.cpp	b1d6fa7ee6ef387c
+50	178	6898571671616833	CMakeFiles/MyCovidRecord.dir/MyCovidRecord_autogen/EWIEGA46WW/qrc_qml.cpp.obj	79dbae1b6b2c7279
+340	1740	6891277974002980	CMakeFiles/MyCovidRecord.dir/main.cpp.obj	cdbe989d983e406
+179	302	6898571672817105	MyCovidRecord.exe	f23bd113170ec748
+10	34	0	C:/Users/Auren/3D Objects/build-MyCovidRecord-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	aa1d7ffda6b99873
+7	166	6898574760460839	MyCovidRecord_autogen/timestamp	b1d6fa7ee6ef387c
+7	166	6898574760460839	MyCovidRecord_autogen/mocs_compilation.cpp	b1d6fa7ee6ef387c
+7	166	6898574760460839	C:/Users/Auren/3D Objects/build-MyCovidRecord-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/MyCovidRecord_autogen/timestamp	b1d6fa7ee6ef387c
+7	166	6898574760460839	C:/Users/Auren/3D Objects/build-MyCovidRecord-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/MyCovidRecord_autogen/mocs_compilation.cpp	b1d6fa7ee6ef387c
+177	227	6898574761050972	MyCovidRecord_autogen/EWIEGA46WW/qrc_qml.cpp	996351bdedbb3695
+177	227	6898574761050972	C:/Users/Auren/3D Objects/build-MyCovidRecord-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/MyCovidRecord_autogen/EWIEGA46WW/qrc_qml.cpp	996351bdedbb3695
+227	356	6898574762372462	CMakeFiles/MyCovidRecord.dir/MyCovidRecord_autogen/EWIEGA46WW/qrc_qml.cpp.obj	79dbae1b6b2c7279
+356	475	6898574763512722	MyCovidRecord.exe	f23bd113170ec748
+11	30	0	C:/Users/Auren/3D Objects/build-MyCovidRecord-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	aa1d7ffda6b99873
+11	30	0	C:/Users/Auren/3D Objects/build-MyCovidRecord-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	aa1d7ffda6b99873
+7	55	6898576606814426	MyCovidRecord_autogen/EWIEGA46WW/qrc_qml.cpp	996351bdedbb3695
+7	55	6898576606814426	C:/Users/Auren/3D Objects/build-MyCovidRecord-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/MyCovidRecord_autogen/EWIEGA46WW/qrc_qml.cpp	996351bdedbb3695
+55	184	6898576608134728	CMakeFiles/MyCovidRecord.dir/MyCovidRecord_autogen/EWIEGA46WW/qrc_qml.cpp.obj	79dbae1b6b2c7279
+185	307	6898576609314995	MyCovidRecord.exe	f23bd113170ec748
+11	30	0	C:/Users/Auren/3D Objects/build-MyCovidRecord-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	aa1d7ffda6b99873
+7	52	6898581996019457	MyCovidRecord_autogen/EWIEGA46WW/qrc_qml.cpp	996351bdedbb3695
+7	52	6898581996019457	C:/Users/Auren/3D Objects/build-MyCovidRecord-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/MyCovidRecord_autogen/EWIEGA46WW/qrc_qml.cpp	996351bdedbb3695
+53	178	6898581997299747	CMakeFiles/MyCovidRecord.dir/MyCovidRecord_autogen/EWIEGA46WW/qrc_qml.cpp.obj	79dbae1b6b2c7279
+179	298	6898581998470010	MyCovidRecord.exe	f23bd113170ec748
+10	29	0	C:/Users/Auren/3D Objects/build-MyCovidRecord-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	aa1d7ffda6b99873
+23	55	0	C:/Users/Auren/3D Objects/build-MyCovidRecord-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	aa1d7ffda6b99873
+30	119	6899942238706370	MyCovidRecord_autogen/EWIEGA46WW/qrc_qml.cpp	996351bdedbb3695
+30	119	6899942238706370	C:/Users/Auren/3D Objects/build-MyCovidRecord-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/MyCovidRecord_autogen/EWIEGA46WW/qrc_qml.cpp	996351bdedbb3695
+120	569	6899942243227397	CMakeFiles/MyCovidRecord.dir/MyCovidRecord_autogen/EWIEGA46WW/qrc_qml.cpp.obj	79dbae1b6b2c7279
+569	945	6899942246948238	MyCovidRecord.exe	f23bd113170ec748

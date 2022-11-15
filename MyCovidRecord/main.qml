@@ -1,8 +1,112 @@
-/* This file is generated and only relevant for integrating the project into a Qt 6 and cmake based
-C++ project. */
+import QtQuick 2.15
+import QtQuick.Window 2.15
 
-import QtQuick
-import content
+Window {
+    width: 375
+    height: 812
 
-App {
+    visible: true
+    title: qsTr("My Covid Record")
+
+    State {
+        name: "homePageState"
+        PropertyChanges { target: homePage; visible: false }
+    }
+
+    State {
+        name: "requestPageState"
+        PropertyChanges { target: requestPage; visible: false }
+    }
+
+    RequestPassPage {
+        id: requestPage
+    }
+
+    Flickable {
+        id: homePage
+        anchors.fill: parent
+        clip: true
+        contentHeight: myContent.height
+
+        Rectangle {
+            width: 375
+            height: myContent.height + 148
+            color: "#e3f3ff"
+            gradient: Gradient {
+                GradientStop {
+                    position: 0
+                    color: "#e3f3ff"
+                }
+
+                GradientStop {
+                    position: 1
+                    color: "#edf7ff"
+                }
+                orientation: Gradient.Vertical
+            }
+
+            Image {
+                x: 10
+                y: 50
+                width: 60
+                height: 50
+                source: "assets/Sidebar Button.png"
+                fillMode: Image.PreserveAspectFit
+
+                MouseArea {
+                    width: 60
+                    height: 50
+
+                    property bool sideBarSelected: false
+                    onClicked: {
+                        sideBarSelected = !sideBarSelected
+                        sideBar.visible = sideBarSelected
+                    }
+                }
+            }
+
+            Text {
+                x: 70
+                y: 50
+                width: 217
+                height: 50
+                color: "#002e6e"
+                text: qsTr("My Covid Record")
+                font.pixelSize: 22
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                font.family: "Fira Sans"
+                font.styleName: "Bold"
+            }
+
+            Image {
+                x: 310
+                y: 38
+                width: 65
+                height: 100
+                source: "assets/Picture.png"
+                fillMode: Image.PreserveAspectFit
+            }
+
+            Rectangle {
+                id: scrollBarPadding
+                x: 375
+                y: 0
+                width: 17
+                height: 1257
+                color: "#ffffff"
+            }
+
+            Content {
+                x: 13
+                y: 148
+                id: myContent
+            }
+        }
+    }
+
+    SideBar {
+        id: sideBar
+        visible: false
+    }
 }
