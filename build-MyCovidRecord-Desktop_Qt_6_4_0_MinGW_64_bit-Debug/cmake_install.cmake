@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Auren/3D Objects/MyCovidRecord
+# Install script for directory: C:/Users/Auren/Documents/GitHub/My-Covid-Record/MyCovidRecord
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,7 +38,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "C:/Users/Auren/3D Objects/build-MyCovidRecord-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/MyCovidRecord.exe")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "C:/Users/Auren/Documents/GitHub/My-Covid-Record/build-MyCovidRecord-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/MyCovidRecord.exe")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/MyCovidRecord.exe" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/MyCovidRecord.exe")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -55,5 +55,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/Auren/3D Objects/build-MyCovidRecord-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/Auren/Documents/GitHub/My-Covid-Record/build-MyCovidRecord-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

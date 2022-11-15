@@ -1,21 +1,30 @@
 import QtQuick 2.15
+import QtQuick.Controls 2.15
 
 Item {
-    Rectangle {
-        x: 0
-        y: 0
-        width: 375
+    property alias drawer: drawer
+
+    Drawer {
+        id: drawer
+        width: 313
         height: 812
 
-        color: "#E5F2FC"
+        Rectangle {
+            x: 0
+            y: 0
+            width: 375
+            height: 812
 
-        Image {
-            x: 174
-            y: 166
-            width: 211
-            height: 520
+            color: "#E5F2FC"
 
-            source: "assets/Side Picture.png"
+            Image {
+                x: 174
+                y: 166
+                width: 211
+                height: 520
+
+                source: "assets/Side Picture.png"
+            }
         }
 
         Rectangle {
@@ -84,6 +93,13 @@ Item {
                     font.weight: Font.Bold
                     font.family: "Fira Sans"
                 }
+
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: {
+                        drawer.close()
+                    }
+                }
             }
 
             Rectangle {
@@ -113,6 +129,13 @@ Item {
                     verticalAlignment: Text.AlignVCenter
                     font.weight: Font.Bold
                     font.family: "Fira Sans"
+                }
+
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: {
+                        drawer.close()
+                    }
                 }
             }
 
@@ -144,6 +167,13 @@ Item {
                     font.weight: Font.Bold
                     font.family: "Fira Sans"
                 }
+
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: {
+                        drawer.close()
+                    }
+                }
             }
 
             Rectangle {
@@ -173,6 +203,13 @@ Item {
                     verticalAlignment: Text.AlignVCenter
                     font.weight: Font.Bold
                     font.family: "Fira Sans"
+                }
+
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: {
+                        drawer.close()
+                    }
                 }
             }
 

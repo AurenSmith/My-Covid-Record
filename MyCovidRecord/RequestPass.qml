@@ -1,9 +1,6 @@
 import QtQuick 2.15
 
 Item {
-    property alias requestPass: requestPass
-    property alias requestButton: requestButton
-
     Rectangle {
         id: requestPass
         width: 349
@@ -73,15 +70,9 @@ Item {
                 height: 46
 
                 onClicked: {
-                    console.log("Request a Pass")
+                    console.log("Hello World!")
                 }
             }
-        }
-
-        Rectangle {
-            width: 100
-            height: 100
-            color: "red"
         }
     }
 }

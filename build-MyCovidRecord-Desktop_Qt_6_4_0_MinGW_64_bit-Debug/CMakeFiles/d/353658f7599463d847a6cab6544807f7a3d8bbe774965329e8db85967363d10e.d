@@ -415,9 +415,9 @@ MyCovidRecord_autogen/timestamp: \
   C:/Qt/Tools/CMake_64/share/cmake-3.23/Modules/Platform/Windows.cmake \
   C:/Qt/Tools/CMake_64/share/cmake-3.23/Modules/Platform/WindowsPaths.cmake \
   C:/Qt/Tools/QtCreator/share/qtcreator/package-manager/auto-setup.cmake \
-  C:/Users/Auren/3D\ Objects/MyCovidRecord/CMakeLists.txt \
-  C:/Users/Auren/3D\ Objects/MyCovidRecord/main.cpp \
-  C:/Users/Auren/3D\ Objects/MyCovidRecord/qml.qrc \
+  C:/Users/Auren/Documents/GitHub/My-Covid-Record/MyCovidRecord/CMakeLists.txt \
+  C:/Users/Auren/Documents/GitHub/My-Covid-Record/MyCovidRecord/main.cpp \
+  C:/Users/Auren/Documents/GitHub/My-Covid-Record/MyCovidRecord/qml.qrc \
   CMakeFiles/3.23.2/CMakeCXXCompiler.cmake \
   CMakeFiles/3.23.2/CMakeRCCompiler.cmake \
   CMakeFiles/3.23.2/CMakeSystem.cmake \

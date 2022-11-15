@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/Auren/3D Objects/build-MyCovidRecord-Desktop_Qt_6_4_0_MinGW_64_bit-Debug"
+			"value" : "c:/Users/Auren/Documents/GitHub/My-Covid-Record/build-MyCovidRecord-Desktop_Qt_6_4_0_MinGW_64_bit-Debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -527,7 +527,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/Auren/3D Objects/MyCovidRecord"
+			"value" : "C:/Users/Auren/Documents/GitHub/My-Covid-Record/MyCovidRecord"
 		},
 		{
 			"name" : "CMAKE_INSTALL_BINDIR",
@@ -1523,7 +1523,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/Auren/3D Objects/build-MyCovidRecord-Desktop_Qt_6_4_0_MinGW_64_bit-Debug"
+			"value" : "C:/Users/Auren/Documents/GitHub/My-Covid-Record/build-MyCovidRecord-Desktop_Qt_6_4_0_MinGW_64_bit-Debug"
 		},
 		{
 			"name" : "MyCovidRecord_IS_TOP_LEVEL",
@@ -1547,7 +1547,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/Auren/3D Objects/MyCovidRecord"
+			"value" : "C:/Users/Auren/Documents/GitHub/My-Covid-Record/MyCovidRecord"
 		},
 		{
 			"name" : "QT_ADDITIONAL_HOST_PACKAGES_PREFIX_PATH",

@@ -97,19 +97,19 @@
 		{
 			"backtrace" : 7,
 			"isGenerated" : true,
-			"path" : "C:/Users/Auren/3D Objects/build-MyCovidRecord-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/CMakeFiles/MyCovidRecord_qmlimportscan",
+			"path" : "C:/Users/Auren/Documents/GitHub/My-Covid-Record/build-MyCovidRecord-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/CMakeFiles/MyCovidRecord_qmlimportscan",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "C:/Users/Auren/3D Objects/build-MyCovidRecord-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/CMakeFiles/MyCovidRecord_qmlimportscan.rule",
+			"path" : "C:/Users/Auren/Documents/GitHub/My-Covid-Record/build-MyCovidRecord-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/CMakeFiles/MyCovidRecord_qmlimportscan.rule",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "C:/Users/Auren/3D Objects/build-MyCovidRecord-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/.qt_plugins/Qt6_QmlPlugins_Imports_MyCovidRecord.cmake.rule",
+			"path" : "C:/Users/Auren/Documents/GitHub/My-Covid-Record/build-MyCovidRecord-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/.qt_plugins/Qt6_QmlPlugins_Imports_MyCovidRecord.cmake.rule",
 			"sourceGroupIndex" : 1
 		}
 	],

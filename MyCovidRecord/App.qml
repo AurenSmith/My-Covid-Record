@@ -1,12 +1,12 @@
 import QtQuick 2.15
 
 Flickable {
-    id: homePage
     anchors.fill: parent
     clip: true
     contentHeight: myContent.height
 
     Rectangle {
+        //Background
         width: 375
         height: myContent.height + 148
         color: "#e3f3ff"
@@ -23,20 +23,7 @@ Flickable {
             orientation: Gradient.Vertical
         }
 
-        Text {
-            x: 70
-            y: 25
-            width: 217
-            height: 50
-            color: "#002e6e"
-            text: qsTr("Hello World!")
-            font.pixelSize: 22
-            horizontalAlignment: Text.AlignHCenter
-            verticalAlignment: Text.AlignVCenter
-            font.family: "Fira Sans"
-            font.styleName: "Bold"
-        }
-
+        //Side Bar Button
         Image {
             x: 10
             y: 50
@@ -49,14 +36,13 @@ Flickable {
                 width: 60
                 height: 50
 
-                property bool sideBarSelected: false
                 onClicked: {
-                    sideBarSelected = !sideBarSelected
-                    sideBar.visible = sideBarSelected
+                    sideBar.drawer.open()
                 }
             }
         }
 
+        //Title
         Text {
             x: 70
             y: 50
@@ -71,6 +57,7 @@ Flickable {
             font.styleName: "Bold"
         }
 
+        //Background Top Image
         Image {
             x: 310
             y: 38
@@ -78,15 +65,6 @@ Flickable {
             height: 100
             source: "assets/Picture.png"
             fillMode: Image.PreserveAspectFit
-        }
-
-        Rectangle {
-            id: scrollBarPadding
-            x: 375
-            y: 0
-            width: 17
-            height: 1257
-            color: "#ffffff"
         }
 
         Content {
@@ -98,8 +76,5 @@ Flickable {
 
     SideBar {
         id: sideBar
-        visible: false
     }
 }
-
-

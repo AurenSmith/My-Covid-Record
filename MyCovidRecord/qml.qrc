@@ -1,31 +1,31 @@
 <RCC>
     <qresource prefix="/">
         <file>main.qml</file>
+        <file>App.qml</file>
         <file>assets/Button.png</file>
         <file>assets/Dropdown Circle.png</file>
         <file>assets/Help.png</file>
         <file>assets/Light Button.png</file>
+        <file>assets/Nav Button.png</file>
         <file>assets/Picture.png</file>
         <file>assets/Privacy.png</file>
         <file>assets/Profile Button.png</file>
+        <file>assets/qr-code.png</file>
+        <file>assets/Side Picture.png</file>
         <file>assets/Sidebar Button.png</file>
         <file>assets/Small Button.png</file>
         <file>assets/Thin Button.png</file>
         <file>assets/Vaccine Icon.png</file>
-        <file>assets/qr-code.png</file>
-        <file>Content.qml</file>
+        <file>assets/Vector.png</file>
         <file>Profile.qml</file>
-        <file>Vaccines.qml</file>
-        <file>Results.qml</file>
-        <file>RequestPass.qml</file>
         <file>ProfileDropdown.qml</file>
-        <file>VaccineDropdown.qml</file>
+        <file>RequestPass.qml</file>
+        <file>RequestPassPage.qml</file>
+        <file>Results.qml</file>
         <file>ResultsDropdown.qml</file>
         <file>SideBar.qml</file>
-        <file>assets/Vector.png</file>
-        <file>assets/Side Picture.png</file>
-        <file>assets/Nav Button.png</file>
-        <file>RequestPassPage.qml</file>
-        <file>App.qml</file>
+        <file>VaccineDropdown.qml</file>
+        <file>Vaccines.qml</file>
+        <file>Content.qml</file>
     </qresource>
 </RCC>
