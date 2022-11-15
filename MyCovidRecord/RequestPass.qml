@@ -1,6 +1,9 @@
 import QtQuick 2.15
 
 Item {
+    property alias requestPass: requestPass
+    property alias requestButton: requestButton
+
     Rectangle {
         id: requestPass
         width: 349
@@ -64,8 +67,21 @@ Item {
 
             MouseArea {
                 id: requestButton
+                x: 0
+                y: 0
+                width: 290
+                height: 46
 
+                onClicked: {
+                    console.log("Request a Pass")
+                }
             }
+        }
+
+        Rectangle {
+            width: 100
+            height: 100
+            color: "red"
         }
     }
 }

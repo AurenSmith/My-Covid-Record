@@ -1,8 +1,6 @@
 import QtQuick 2.15
 
 Item {
-    property alias requestPass: requestPass
-
     id: myContent
     height: 1257
 

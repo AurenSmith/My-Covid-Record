@@ -26,5 +26,6 @@
         <file>assets/Side Picture.png</file>
         <file>assets/Nav Button.png</file>
         <file>RequestPassPage.qml</file>
+        <file>App.qml</file>
     </qresource>
 </RCC>
