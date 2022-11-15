@@ -1,3 +1,21 @@
+Side Bar Menu Implemented with animations and interactions
+
+Multiple pages idea:
+
+Window {
+  StackView {
+    id: stackView
+    
+    //starting page
+    initialItem: PageOne {}
+  }
+  
+  //change pages
+  button.onClicked: {
+    stackView.push("PageTwo.qml")
+  }
+}
+
 To open the application go to:
 "QT Design Studio > Open Project" > "MyCovidRecord > MyCovidRecord.qmlproject"
 
