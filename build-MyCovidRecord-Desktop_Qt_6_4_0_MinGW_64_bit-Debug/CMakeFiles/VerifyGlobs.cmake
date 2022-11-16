@@ -141,6 +141,7 @@ set(OLD_GLOB
   "C:/Users/Auren/Documents/GitHub/My-Covid-Record/MyCovidRecord/Results.qml"
   "C:/Users/Auren/Documents/GitHub/My-Covid-Record/MyCovidRecord/ResultsDropdown.qml"
   "C:/Users/Auren/Documents/GitHub/My-Covid-Record/MyCovidRecord/SideBar.qml"
+  "C:/Users/Auren/Documents/GitHub/My-Covid-Record/MyCovidRecord/Test.qml"
   "C:/Users/Auren/Documents/GitHub/My-Covid-Record/MyCovidRecord/VaccineDropdown.qml"
   "C:/Users/Auren/Documents/GitHub/My-Covid-Record/MyCovidRecord/Vaccines.qml"
   "C:/Users/Auren/Documents/GitHub/My-Covid-Record/MyCovidRecord/main.qml"
