@@ -1,7 +1,7 @@
 import QtQuick 2.15
 
-TestResultsForm {
-    id: resultsForm
+ProfileViewForm {
+    id: profileViewForm
     property bool selected: false
     resultsButton.onClicked: {
         resultsForm.selected = !resultsForm.selected
