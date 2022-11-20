@@ -218,7 +218,85 @@ Flickable {
                 height: 48
 
                 onClicked: {
+                    verificationMethod.visible = false
+                    confirmYourIdentity.visible = true
+                }
+            }
+        }
 
+        //Confirm your Identity
+        Image {
+            visible: false
+            id: confirmYourIdentity
+            x: 14
+            y: 148
+            width: 348
+            height: 563
+            source: "assets/Confirm your Identity.png"
+
+            Text {
+                x: 0
+                anchors.bottom: parent.top
+                width: 348
+                height: 60
+                color: "#002E6E"
+                opacity: 0.7
+                text: qsTr("Confirm your Identity")
+                font.pixelSize: 23
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                font.family: "Fira Sans"
+                font.styleName: "Bold"
+                font.weight: 700
+            }
+
+            MouseArea {
+                x: 29
+                y: 417
+                width: 290
+                height: 48
+
+                onClicked: {
+                    confirmYourIdentity.visible = false
+                    terms.visible = true
+                }
+            }
+        }
+
+        //Terms
+        Image {
+            visible: false
+            id: terms
+            x: 14
+            y: 86
+            width: 348
+            height: 602
+            source: "assets/Terms.png"
+
+            Text {
+                x: 0
+                anchors.bottom: parent.top
+                width: 348
+                height: 60
+                color: "#002E6E"
+                opacity: 0.7
+                text: qsTr("Terms")
+                font.pixelSize: 23
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                font.family: "Fira Sans"
+                font.styleName: "Bold"
+                font.weight: 700
+            }
+
+            MouseArea {
+                x: 29
+                y: 466
+                width: 290
+                height: 48
+
+                onClicked: {
+                    stackView.push("App.qml")
                 }
             }
         }

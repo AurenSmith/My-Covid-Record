@@ -47,5 +47,6 @@
         <file>assets/Verify.png</file>
         <file>LoginPage.qml</file>
         <file>SignUpPage.qml</file>
+        <file>assets/Terms.png</file>
     </qresource>
 </RCC>
