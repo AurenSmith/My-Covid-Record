@@ -27,5 +27,25 @@
         <file>VaccineDropdown.qml</file>
         <file>Vaccines.qml</file>
         <file>Content.qml</file>
+        <file>assets/BottomRadio.png</file>
+        <file>assets/Confirm your Identity.png</file>
+        <file>assets/Get Started.png</file>
+        <file>assets/Login Main Logo.png</file>
+        <file>assets/Login Module.png</file>
+        <file>assets/Module.png</file>
+        <file>assets/My Health Account.png</file>
+        <file>assets/MyselfButton.png</file>
+        <file>assets/RealMe Module.png</file>
+        <file>assets/RequestModule2.png</file>
+        <file>assets/Second Logo.png</file>
+        <file>assets/SignUp Module.png</file>
+        <file>assets/SignUp Title.png</file>
+        <file>assets/SomeoneElseButton.png</file>
+        <file>assets/TopRadio.png</file>
+        <file>assets/Verification Method.png</file>
+        <file>assets/Verify your Identity.png</file>
+        <file>assets/Verify.png</file>
+        <file>LoginPage.qml</file>
+        <file>SignUpPage.qml</file>
     </qresource>
 </RCC>

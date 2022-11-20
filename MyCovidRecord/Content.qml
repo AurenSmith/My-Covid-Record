@@ -191,6 +191,17 @@ Item {
             font.weight: Font.Bold
             font.family: "Fira Sans"
         }
+
+        MouseArea {
+            x: 0
+            y: 0
+            width: 331
+            height: 53
+
+            onClicked: {
+                stackView.push("LoginPage.qml")
+            }
+        }
     }
 
     Image {

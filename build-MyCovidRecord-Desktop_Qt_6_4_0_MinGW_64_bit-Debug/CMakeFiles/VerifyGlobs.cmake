@@ -134,6 +134,7 @@ file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/Users/Auren/Documents/GitH
 set(OLD_GLOB
   "C:/Users/Auren/Documents/GitHub/My-Covid-Record/MyCovidRecord/App.qml"
   "C:/Users/Auren/Documents/GitHub/My-Covid-Record/MyCovidRecord/Content.qml"
+  "C:/Users/Auren/Documents/GitHub/My-Covid-Record/MyCovidRecord/LoginPage.qml"
   "C:/Users/Auren/Documents/GitHub/My-Covid-Record/MyCovidRecord/Profile.qml"
   "C:/Users/Auren/Documents/GitHub/My-Covid-Record/MyCovidRecord/ProfileDropdown.qml"
   "C:/Users/Auren/Documents/GitHub/My-Covid-Record/MyCovidRecord/RequestPass.qml"
@@ -141,6 +142,7 @@ set(OLD_GLOB
   "C:/Users/Auren/Documents/GitHub/My-Covid-Record/MyCovidRecord/Results.qml"
   "C:/Users/Auren/Documents/GitHub/My-Covid-Record/MyCovidRecord/ResultsDropdown.qml"
   "C:/Users/Auren/Documents/GitHub/My-Covid-Record/MyCovidRecord/SideBar.qml"
+  "C:/Users/Auren/Documents/GitHub/My-Covid-Record/MyCovidRecord/SignUpPage.qml"
   "C:/Users/Auren/Documents/GitHub/My-Covid-Record/MyCovidRecord/Test.qml"
   "C:/Users/Auren/Documents/GitHub/My-Covid-Record/MyCovidRecord/VaccineDropdown.qml"
   "C:/Users/Auren/Documents/GitHub/My-Covid-Record/MyCovidRecord/Vaccines.qml"

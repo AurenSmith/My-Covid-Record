@@ -97,6 +97,7 @@ Item {
                 MouseArea {
                     anchors.fill: parent
                     onClicked: {
+                        stackView.push("App.qml")
                         drawer.close()
                     }
                 }
@@ -208,6 +209,7 @@ Item {
                 MouseArea {
                     anchors.fill: parent
                     onClicked: {
+                        stackView.push("LoginPage.qml")
                         drawer.close()
                     }
                 }
