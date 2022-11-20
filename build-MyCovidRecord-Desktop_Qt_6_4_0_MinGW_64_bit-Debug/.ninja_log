@@ -12,6 +12,7 @@
 296	333	6901983475524005	CMakeFiles/MyCovidRecord.dir/MyCovidRecord_autogen/mocs_compilation.cpp.obj	d7cf1b70c56b811f
 51	171	6901997731130540	CMakeFiles/MyCovidRecord.dir/MyCovidRecord_autogen/EWIEGA46WW/qrc_qml.cpp.obj	72b7472b8a297206
 172	292	6901997732300806	MyCovidRecord.exe	f23bd113170ec748
+<<<<<<< Updated upstream
 35	1013	6906122565652796	build.ninja	f977f89d9ff06aac
 44	2818	6906122565652796	build.ninja	f977f89d9ff06aac
 10	33	0	C:/Users/Auren/Documents/GitHub/My-Covid-Record/build-MyCovidRecord-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	279c676b1ddbc268
@@ -25,3 +26,6 @@
 293	603	6906122572894426	CMakeFiles/MyCovidRecord.dir/MyCovidRecord_autogen/EWIEGA46WW/qrc_qml.cpp.obj	72b7472b8a297206
 291	1871	6906122585557288	CMakeFiles/MyCovidRecord.dir/main.cpp.obj	87754f213689374a
 1871	2230	6906122589128087	MyCovidRecord.exe	f23bd113170ec748
+=======
+35	1013	6902712065583731	build.ninja	f977f89d9ff06aac
+>>>>>>> Stashed changes
