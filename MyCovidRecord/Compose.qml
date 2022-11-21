@@ -70,7 +70,7 @@ Flickable {
                 height: 48
 
                 onClicked: {
-                    stackView.push("App.qml")
+                    popUp.visible = true
                 }
             }
         }
@@ -81,6 +81,27 @@ Flickable {
             width: 375
             height: 260
             source: "assets/Keyboard.png"
+        }
+
+        Image {
+            id: popUp
+            visible: false
+            x: 26
+            y: 215
+            width: 324
+            height: 222
+            source: "assets/PopUpThanks.png"
+
+            MouseArea {
+                x: 21
+                y: 139
+                width: 290
+                height: 48
+
+                onClicked: {
+                    stackView.push("App.qml")
+                }
+            }
         }
     }
 }

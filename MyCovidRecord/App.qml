@@ -36,11 +36,8 @@ Flickable {
                 width: 60
                 height: 50
 
-                //property bool sideBarSelected: false
                 onClicked: {
                     sideBar.drawer.open()
-                    //sideBarSelected = !sideBarSelected
-                    //sideBar.visible = sideBarSelected
                 }
             }
         }

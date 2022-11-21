@@ -8,7 +8,6 @@
         <file>assets/Light Button.png</file>
         <file>assets/Nav Button.png</file>
         <file>assets/Picture.png</file>
-        <file>assets/Privacy.png</file>
         <file>assets/Profile Button.png</file>
         <file>assets/qr-code.png</file>
         <file>assets/Side Picture.png</file>
@@ -70,5 +69,8 @@
         <file>assets/Edit Profile Button.png</file>
         <file>assets/NHI Number.png</file>
         <file>assets/Profile Editor.png</file>
+        <file>assets/PopUpThanks.png</file>
+        <file>PrivacyStatement.qml</file>
+        <file>assets/Privacy.png</file>
     </qresource>
 </RCC>
