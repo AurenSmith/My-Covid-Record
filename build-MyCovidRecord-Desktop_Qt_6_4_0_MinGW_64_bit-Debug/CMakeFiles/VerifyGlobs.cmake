@@ -42,6 +42,7 @@ endif()
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/Users/Auren/Documents/GitHub/My-Covid-Record/MyCovidRecord/*.cpp")
 set(OLD_GLOB
   "C:/Users/Auren/Documents/GitHub/My-Covid-Record/MyCovidRecord/main.cpp"
+  "C:/Users/Auren/Documents/GitHub/My-Covid-Record/MyCovidRecord/src/main.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
@@ -60,6 +61,8 @@ endif()
 # _directory_contents at C:/Qt/6.4.0/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:83 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/Users/Auren/Documents/GitHub/My-Covid-Record/MyCovidRecord/*.h")
 set(OLD_GLOB
+  "C:/Users/Auren/Documents/GitHub/My-Covid-Record/MyCovidRecord/src/app_environment.h"
+  "C:/Users/Auren/Documents/GitHub/My-Covid-Record/MyCovidRecord/src/import_qml_plugins.h"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
@@ -153,6 +156,10 @@ set(OLD_GLOB
   "C:/Users/Auren/Documents/GitHub/My-Covid-Record/MyCovidRecord/Test.qml"
   "C:/Users/Auren/Documents/GitHub/My-Covid-Record/MyCovidRecord/VaccineDropdown.qml"
   "C:/Users/Auren/Documents/GitHub/My-Covid-Record/MyCovidRecord/Vaccines.qml"
+  "C:/Users/Auren/Documents/GitHub/My-Covid-Record/MyCovidRecord/imports/UntitledProject/Constants.qml"
+  "C:/Users/Auren/Documents/GitHub/My-Covid-Record/MyCovidRecord/imports/UntitledProject/DirectoryFontLoader.qml"
+  "C:/Users/Auren/Documents/GitHub/My-Covid-Record/MyCovidRecord/imports/UntitledProject/EventListModel.qml"
+  "C:/Users/Auren/Documents/GitHub/My-Covid-Record/MyCovidRecord/imports/UntitledProject/EventListSimulator.qml"
   "C:/Users/Auren/Documents/GitHub/My-Covid-Record/MyCovidRecord/main.qml"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
