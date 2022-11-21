@@ -110,6 +110,17 @@ Item {
                 font.weight: Font.Bold
                 font.family: "Fira Sans"
             }
+
+            MouseArea {
+                x: 0
+                y: 0
+                width: 304
+                height: 48
+
+                onClicked: {
+                    stackView.push("RAT.qml")
+                }
+            }
         }
 
         Image {

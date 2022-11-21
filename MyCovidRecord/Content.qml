@@ -167,6 +167,17 @@ Item {
         height: 101
         source: "assets/Help.png"
         fillMode: Image.PreserveAspectFit
+
+        MouseArea {
+            x: 0
+            y: 0
+            width: 349
+            height: 101
+
+            onClicked: {
+                stackView.push("Help.qml")
+            }
+        }
     }
 
     Image {

@@ -135,6 +135,7 @@ Item {
                 MouseArea {
                     anchors.fill: parent
                     onClicked: {
+                        stackView.push("Contact.qml")
                         drawer.close()
                     }
                 }

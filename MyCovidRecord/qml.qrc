@@ -48,5 +48,23 @@
         <file>LoginPage.qml</file>
         <file>SignUpPage.qml</file>
         <file>assets/Terms.png</file>
+        <file>RAT.qml</file>
+        <file>Help.qml</file>
+        <file>assets/I want to.png</file>
+        <file>assets/Isolation.png</file>
+        <file>assets/Testing and tracing.png</file>
+        <file>assets/Vaccines.png</file>
+        <file>assets/Report RAT Result.png</file>
+        <file>assets/Checkbox.png</file>
+        <file>assets/Results Module.png</file>
+        <file>RATResults.qml</file>
+        <file>assets/Switch No.png</file>
+        <file>assets/Switch Yes.png</file>
+        <file>Contact.qml</file>
+        <file>assets/Contact.png</file>
+        <file>Compose.qml</file>
+        <file>assets/Compose.png</file>
+        <file>assets/Back Button.png</file>
+        <file>assets/Keyboard.png</file>
     </qresource>
 </RCC>

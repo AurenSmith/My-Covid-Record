@@ -133,10 +133,15 @@ endif()
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/Users/Auren/Documents/GitHub/My-Covid-Record/MyCovidRecord/*.qml")
 set(OLD_GLOB
   "C:/Users/Auren/Documents/GitHub/My-Covid-Record/MyCovidRecord/App.qml"
+  "C:/Users/Auren/Documents/GitHub/My-Covid-Record/MyCovidRecord/Compose.qml"
+  "C:/Users/Auren/Documents/GitHub/My-Covid-Record/MyCovidRecord/Contact.qml"
   "C:/Users/Auren/Documents/GitHub/My-Covid-Record/MyCovidRecord/Content.qml"
+  "C:/Users/Auren/Documents/GitHub/My-Covid-Record/MyCovidRecord/Help.qml"
   "C:/Users/Auren/Documents/GitHub/My-Covid-Record/MyCovidRecord/LoginPage.qml"
   "C:/Users/Auren/Documents/GitHub/My-Covid-Record/MyCovidRecord/Profile.qml"
   "C:/Users/Auren/Documents/GitHub/My-Covid-Record/MyCovidRecord/ProfileDropdown.qml"
+  "C:/Users/Auren/Documents/GitHub/My-Covid-Record/MyCovidRecord/RAT.qml"
+  "C:/Users/Auren/Documents/GitHub/My-Covid-Record/MyCovidRecord/RATResults.qml"
   "C:/Users/Auren/Documents/GitHub/My-Covid-Record/MyCovidRecord/RequestPass.qml"
   "C:/Users/Auren/Documents/GitHub/My-Covid-Record/MyCovidRecord/RequestPassPage.qml"
   "C:/Users/Auren/Documents/GitHub/My-Covid-Record/MyCovidRecord/Results.qml"
