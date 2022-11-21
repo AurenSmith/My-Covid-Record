@@ -164,6 +164,17 @@ Flickable {
                     request2.visible = true
                 }
             }
+
+            MouseArea {
+                x: 29
+                y: 465
+                width: 290
+                height: 48
+
+                onClicked: {
+                    stackView.push("App.qml")
+                }
+            }
         }
     }
 

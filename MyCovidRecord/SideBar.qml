@@ -2,6 +2,7 @@ import QtQuick 2.15
 import QtQuick.Controls 2.15
 
 Item {
+    id: sideBar
     property alias drawer: drawer
 
     Drawer {
@@ -73,19 +74,28 @@ Item {
 
             Image {
                 x: 0
-                y: 294
+                y: pos
                 width: 150
                 height: 50
 
                 source: "assets/Nav Button.png"
+            }
+
+            Item {
+                x: 0
+                y: 294
+                width: 150
+                height: 50
 
                 Text {
+                    id: homeText
                     x: 0
                     y: 0
                     width: 150
                     height: 50
 
-                    color: "#FFFFFF"
+                    //color: Qt.hsla(0.60, 1.00, 0.22, 1.00)
+                    color: homeColor
                     text: qsTr("Home")
                     font.pixelSize: 20
                     horizontalAlignment: Text.AlignHCenter
@@ -97,33 +107,31 @@ Item {
                 MouseArea {
                     anchors.fill: parent
                     onClicked: {
+                        pos = 294
+                        homeColor = "#ffffff"
+                        contactColor = "#002e6e"
+                        profileColor = "#002e6e"
+
                         stackView.push("App.qml")
                         drawer.close()
                     }
                 }
             }
 
-            Rectangle {
+            Item {
                 x: 0
                 y: 354
                 width: 150
                 height: 50
-                radius: 25
-
-                Rectangle {
-                    x: 0
-                    y: 0
-                    width: 50
-                    height: 50
-                }
 
                 Text {
+                    id: contactText
                     x: 0
                     y: 0
                     width: 150
                     height: 50
 
-                    color: "#002e6e"
+                    color: contactColor
                     text: qsTr("Contact")
                     font.pixelSize: 20
                     horizontalAlignment: Text.AlignHCenter
@@ -135,33 +143,31 @@ Item {
                 MouseArea {
                     anchors.fill: parent
                     onClicked: {
+                        pos = 354
+                        contactColor = "#ffffff"
+                        homeColor = "#002e6e"
+                        profileColor = "#002e6e"
+
                         stackView.push("Contact.qml")
                         drawer.close()
                     }
                 }
             }
 
-            Rectangle {
+            Item {
                 x: 0
                 y: 414
                 width: 150
                 height: 50
-                radius: 25
-
-                Rectangle {
-                    x: 0
-                    y: 0
-                    width: 50
-                    height: 50
-                }
 
                 Text {
+                    id: profileText
                     x: 0
                     y: 0
                     width: 150
                     height: 50
 
-                    color: "#002e6e"
+                    color: profileColor
                     text: qsTr("Profile")
                     font.pixelSize: 20
                     horizontalAlignment: Text.AlignHCenter
@@ -173,25 +179,22 @@ Item {
                 MouseArea {
                     anchors.fill: parent
                     onClicked: {
+                        pos = 414
+                        profileColor = "#ffffff"
+                        homeColor = "#002e6e"
+                        contactColor = "#002e6e"
+
                         stackView.push("ProfilePage.qml")
                         drawer.close()
                     }
                 }
             }
 
-            Rectangle {
+            Item {
                 x: 0
                 y: 474
                 width: 150
                 height: 50
-                radius: 25
-
-                Rectangle {
-                    x: 0
-                    y: 0
-                    width: 50
-                    height: 50
-                }
 
                 Text {
                     x: 0

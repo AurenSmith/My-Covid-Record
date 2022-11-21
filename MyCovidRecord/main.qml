@@ -9,6 +9,11 @@ Window {
     visible: true
     title: qsTr("My Covid Record")
 
+    property int pos: 294
+    property string homeColor: "#ffffff"
+    property string contactColor: "#002e6e"
+    property string profileColor: "#002e6e"
+
     StackView {
         id: stackView
         anchors.top: parent.top

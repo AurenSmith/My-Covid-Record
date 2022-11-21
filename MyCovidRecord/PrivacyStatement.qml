@@ -1,7 +1,7 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.15
 
-Flickable {
+Flickable {    
     Rectangle {
         width: 375
         height: 812
