@@ -1,8 +1,30 @@
-/* This file is generated and only relevant for integrating the project into a Qt 6 and cmake based
-C++ project. */
+import QtQuick 2.15
+import QtQuick.Controls 2.15
+import QtQuick.Window 2.15
 
-import QtQuick
-import content
+Window {
+    width: 375
+    height: 812
 
-App {
+    visible: true
+    title: qsTr("My Covid Record")
+
+    property int pos: 294
+    property string homeColor: "#ffffff"
+    property string contactColor: "#002e6e"
+    property string profileColor: "#002e6e"
+
+    StackView {
+        id: stackView
+        anchors.top: parent.top
+        anchors.right: parent.right
+        anchors.bottom: parent.bottom
+        anchors.left: parent.left
+        initialItem: PrivacyStatement {}
+    }
+
+    SideBar {
+        id: sideBar
+        visible: false
+    }
 }
