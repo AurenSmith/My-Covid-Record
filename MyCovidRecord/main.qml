@@ -18,15 +18,6 @@ Window {
         initialItem: App {}
     }
 
-//    App {
-//        id: homePage
-//    }
-
-//    RequestPassPage {
-//        id: requestPage
-//        visible: false
-//    }
-
     SideBar {
         id: sideBar
         visible: false

@@ -173,6 +173,7 @@ Item {
                 MouseArea {
                     anchors.fill: parent
                     onClicked: {
+                        stackView.push("ProfilePage.qml")
                         drawer.close()
                     }
                 }

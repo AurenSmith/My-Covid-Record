@@ -66,5 +66,9 @@
         <file>assets/Compose.png</file>
         <file>assets/Back Button.png</file>
         <file>assets/Keyboard.png</file>
+        <file>ProfilePage.qml</file>
+        <file>assets/Edit Profile Button.png</file>
+        <file>assets/NHI Number.png</file>
+        <file>assets/Profile Editor.png</file>
     </qresource>
 </RCC>
