@@ -72,5 +72,6 @@
         <file>assets/PopUpThanks.png</file>
         <file>PrivacyStatement.qml</file>
         <file>assets/Privacy.png</file>
+        <file>application.js</file>
     </qresource>
 </RCC>

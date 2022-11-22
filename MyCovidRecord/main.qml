@@ -1,13 +1,14 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.15
 import QtQuick.Window 2.15
+import "application.js" as Application
 
 Window {
     width: 375
     height: 812
 
     visible: true
-    title: qsTr("My Covid Record")
+    title: qsTr(Application.title)
 
     property int pos: 294
     property string homeColor: "#ffffff"
