@@ -39,15 +39,109 @@ Flickable {
             height: 490
             source: "assets/SignUp Module.png"
 
+            //Full Name
+            Rectangle {
+                x: 23
+                y: 75
+                width: 309
+                height: 50
+                radius: 8
+                color: "#F6F6F6"
+                border.color: "#E8E8E8"
+
+                TextInput {
+                    id: myName
+                    x: 16
+                    y: 0
+                    width: 295
+                    height: 50
+
+                    color: "#BDBDBD"
+                    text: qsTr("Full Name")
+                    font.pixelSize: 16
+                    horizontalAlignment: Text.AlignLeft
+                    verticalAlignment: Text.AlignVCenter
+                    font.family: "Inter"
+                    font.weight: 500
+                }
+            }
+
+            //Email
+            Rectangle {
+                x: 23
+                y: 143
+                width: 309
+                height: 50
+                radius: 8
+                color: "#F6F6F6"
+                border.color: "#E8E8E8"
+
+                TextInput {
+                    id: myEmail
+                    x: 16
+                    y: 0
+                    width: 295
+                    height: 50
+
+                    color: "#BDBDBD"
+                    text: qsTr("Email")
+                    font.pixelSize: 16
+                    horizontalAlignment: Text.AlignLeft
+                    verticalAlignment: Text.AlignVCenter
+                    font.family: "Inter"
+                    font.weight: 500
+                }
+            }
+
+            //DOB
+            Rectangle {
+                x: 23
+                y: 211
+                width: 309
+                height: 50
+                radius: 8
+                color: "#F6F6F6"
+                border.color: "#E8E8E8"
+
+                TextInput {
+                    id: myDOB
+                    x: 16
+                    y: 0
+                    width: 295
+                    height: 50
+
+                    color: "#BDBDBD"
+                    text: qsTr("DOB")
+                    font.pixelSize: 16
+                    horizontalAlignment: Text.AlignLeft
+                    verticalAlignment: Text.AlignVCenter
+                    font.family: "Inter"
+                    font.weight: 500
+                }
+            }
+
             MouseArea {
                 x: 30
                 y: 369
                 width: 290
                 height: 48
 
-                onClicked: {
-                    mainSignUp.visible = false
-                    verifySignUp.visible = true
+                onClicked: function() {
+                    if(myName.text !== "Full Name") {
+                        if(myEmail.text !== "Email") {
+                            if(myDOB.text !== "DOB") {
+                                mainSignUp.visible = false
+                                verifySignUp.visible = true
+                            }
+                        }
+                    }
+
+                    myName.text = "Full Name"
+                    myEmail.text = "Email"
+                    myDOB.text = "DOB"
+                    myName.color = "red"
+                    myEmail.color = "red"
+                    myDOB.color = "red"
                 }
             }
         }
