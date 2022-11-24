@@ -1,5 +1,6 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.15
+import "application.js" as Script
 
 Flickable {
     Rectangle {
@@ -71,6 +72,66 @@ Flickable {
             height: 417
             source: "assets/Edit Profile Button.png"
 
+            //Name
+            Rectangle {
+                x: 22
+                y: 44
+                width: 311
+                height: 19
+                color: "white"
+
+                Text {
+                    anchors.fill: parent
+                    text: qsTr(myName.text)
+                    color: "#002E6E"
+                    font.pixelSize: 16
+                    horizontalAlignment: Text.AlignLeft
+                    verticalAlignment: Text.AlignVCenter
+                    font.family: "Fira Sans"
+                    font.weight: 400
+                }
+            }
+
+            //Email
+            Rectangle {
+                x: 22
+                y: 128
+                width: 311
+                height: 19
+                color: "white"
+
+                Text {
+                    anchors.fill: parent
+                    text: qsTr(myEmail.text)
+                    color: "#002E6E"
+                    font.pixelSize: 16
+                    horizontalAlignment: Text.AlignLeft
+                    verticalAlignment: Text.AlignVCenter
+                    font.family: "Fira Sans"
+                    font.weight: 400
+                }
+            }
+
+            //Mobile Number
+            Rectangle {
+                x: 22
+                y: 298
+                width: 311
+                height: 19
+                color: "white"
+
+                Text {
+                    anchors.fill: parent
+                    text: qsTr(myNumber.text)
+                    color: "#002E6E"
+                    font.pixelSize: 16
+                    horizontalAlignment: Text.AlignLeft
+                    verticalAlignment: Text.AlignVCenter
+                    font.family: "Fira Sans"
+                    font.weight: 400
+                }
+            }
+
             MouseArea {
                 x: 28
                 y: 354
@@ -112,7 +173,7 @@ Flickable {
                     height: 47
 
                     color: "#9B9B9B"
-                    text: qsTr("Prefered Name")
+                    text: qsTr(Script.name)
                     font.pixelSize: 14
                     horizontalAlignment: Text.AlignLeft
                     verticalAlignment: Text.AlignVCenter
@@ -139,7 +200,7 @@ Flickable {
                     height: 47
 
                     color: "#9B9B9B"
-                    text: qsTr("Email")
+                    text: qsTr(Script.email)
                     font.pixelSize: 14
                     horizontalAlignment: Text.AlignLeft
                     verticalAlignment: Text.AlignVCenter
@@ -166,7 +227,7 @@ Flickable {
                     height: 47
 
                     color: "#9B9B9B"
-                    text: qsTr("Mobile Number")
+                    text: qsTr(Script.number)
                     font.pixelSize: 14
                     horizontalAlignment: Text.AlignLeft
                     verticalAlignment: Text.AlignVCenter
@@ -211,6 +272,10 @@ Flickable {
                 onClicked: {
                     p2.visible = false
                     p1.visible = true
+
+                    Script.name = myName.text
+                    Script.email = myEmail.text
+                    Script.number = myNumber.text
                 }
             }
         }
