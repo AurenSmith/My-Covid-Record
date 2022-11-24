@@ -2,6 +2,8 @@ import QtQuick 2.15
 import QtQuick.Controls 2.15
 
 Flickable {
+    property bool boxSelected: false
+
     Rectangle {
         id: mainSignUp
 
@@ -33,6 +35,7 @@ Flickable {
 
         //login module
         Image {
+            id: signUpModule
             x: 14
             y: 236
             width: 348
@@ -227,15 +230,46 @@ Flickable {
                 font.weight: 700
             }
 
+            //password
+            Rectangle {
+                x: 20
+                y: 420
+                width: 309
+                height: 50
+                radius: 8
+                color: "#F6F6F6"
+                border.color: "#E8E8E8"
+
+                TextInput {
+                    id: myPassword
+                    x: 16
+                    y: 0
+                    width: 295
+                    height: 50
+
+                    color: "#BDBDBD"
+                    text: qsTr("Password")
+                    font.pixelSize: 16
+                    horizontalAlignment: Text.AlignLeft
+                    verticalAlignment: Text.AlignVCenter
+                    font.family: "Inter"
+                    font.weight: 500
+                }
+            }
+
             MouseArea {
                 x: 29
                 y: 492
                 width: 290
                 height: 48
 
-                onClicked: {
-                    myHealthAccount.visible = false
-                    verifyYourIdentity.visible = true
+                onClicked: function() {
+                    if(myPassword.text !== "Password") {
+                        myHealthAccount.visible = false
+                        verifyYourIdentity.visible = true
+                    }
+                    myPassword.text = "Password"
+                    myPassword.color = "red"
                 }
             }
         }
@@ -266,6 +300,7 @@ Flickable {
                 font.weight: 700
             }
 
+            //continue
             MouseArea {
                 x: 29
                 y: 417
@@ -275,6 +310,18 @@ Flickable {
                 onClicked: {
                     verifyYourIdentity.visible = false
                     verificationMethod.visible = true
+                }
+            }
+
+            //back
+            MouseArea {
+                x: 29
+                y: 480
+                width: 290
+                height: 48
+
+                onClicked: {
+                    stackView.push("SignUpPage.qml")
                 }
             }
         }
@@ -305,9 +352,53 @@ Flickable {
                 font.weight: 700
             }
 
+            Image {
+                id: methodOne
+                x: 20
+                y: 79
+                width: 316
+                height: 305
+                source: "assets/MethodOne.png"
+
+                MouseArea {
+                    id: methodButton
+                    x: 0
+                    y: 0
+                    width: 316
+                    height: 150
+
+                    property bool methodSelected: true
+                    onClicked: {
+                        methodSelected = !methodSelected
+                        if(methodSelected === false) {
+                            methodOne.source = "assets/MethodTwo.png"
+                            methodButton.y = 175
+                        } else {
+                            methodOne.source = "assets/MethodOne.png"
+                            methodButton.y = 0
+                        }
+
+                    }
+                }
+            }
+
+            //continue
             MouseArea {
                 x: 29
                 y: 417
+                width: 290
+                height: 48
+
+                onClicked: {
+                    verificationMethod.visible = false
+                    confirmYourIdentity.visible = true
+                }
+            }
+
+            //complete later {
+            MouseArea {
+                x: 29
+                y: 480
                 width: 290
                 height: 48
 
@@ -344,15 +435,154 @@ Flickable {
                 font.weight: 700
             }
 
+            //nz drivers license
+            Rectangle {
+                x: 22
+                y: 130
+                width: 304
+                height: 47
+                radius: 7
+                color: "#ffffff"
+                border.color: "#606D76"
+
+                TextInput {
+                    id: myLicense
+                    x: 16
+                    y: 0
+                    width: 309 - 16
+                    height: 50
+
+                    color: "#BDBDBD"
+                    text: qsTr("NZ Drivers License")
+                    font.pixelSize: 16
+                    horizontalAlignment: Text.AlignLeft
+                    verticalAlignment: Text.AlignVCenter
+                    font.family: "Inter"
+                    font.weight: 500
+                }
+            }
+
+            //first name
+            Rectangle {
+                x: 22
+                y: 227
+                width: 304
+                height: 47
+                radius: 7
+                color: "#ffffff"
+                border.color: "#606D76"
+
+                TextInput {
+                    id: myFirstName
+                    x: 16
+                    y: 0
+                    width: 309 - 16
+                    height: 50
+
+                    color: "#BDBDBD"
+                    text: qsTr("First Name")
+                    font.pixelSize: 16
+                    horizontalAlignment: Text.AlignLeft
+                    verticalAlignment: Text.AlignVCenter
+                    font.family: "Inter"
+                    font.weight: 500
+                }
+            }
+
+            //middle name
+            Rectangle {
+                x: 22
+                y: 285
+                width: 304
+                height: 47
+                radius: 7
+                color: "#ffffff"
+                border.color: "#606D76"
+
+                TextInput {
+                    id: myMiddleName
+                    x: 16
+                    y: 0
+                    width: 309 - 16
+                    height: 50
+
+                    color: "#BDBDBD"
+                    text: qsTr("Middle Name")
+                    font.pixelSize: 16
+                    horizontalAlignment: Text.AlignLeft
+                    verticalAlignment: Text.AlignVCenter
+                    font.family: "Inter"
+                    font.weight: 500
+                }
+            }
+
+            //last name
+            Rectangle {
+                x: 22
+                y: 344
+                width: 304
+                height: 47
+                radius: 7
+                color: "#ffffff"
+                border.color: "#606D76"
+
+                TextInput {
+                    id: myLastName
+                    x: 16
+                    y: 0
+                    width: 309 - 16
+                    height: 50
+
+                    color: "#BDBDBD"
+                    text: qsTr("Last Name")
+                    font.pixelSize: 16
+                    horizontalAlignment: Text.AlignLeft
+                    verticalAlignment: Text.AlignVCenter
+                    font.family: "Inter"
+                    font.weight: 500
+                }
+            }
+
+            //continue
             MouseArea {
                 x: 29
                 y: 417
                 width: 290
                 height: 48
 
+                onClicked: function() {
+                    if(myLicense.text !== "NZ Drivers License") {
+                        if(myFirstName.text !== "First Name") {
+                            if(myMiddleName.text !== "Middle Name") {
+                                if(myLastName.text !== "Last Name") {
+                                    confirmYourIdentity.visible = false
+                                    terms.visible = true
+                                }
+                            }
+                        }
+                    }
+
+                    myLicense.text = "NZ Drivers License"
+                    myFirstName.text = "First Name"
+                    myMiddleName.text = "Middle Name"
+                    myLastName.text = "Last Name"
+
+                    myLicense.color = "red"
+                    myFirstName.color = "red"
+                    myMiddleName.color = "red"
+                    myLastName.color = "red"
+                }
+            }
+
+            //back
+            MouseArea {
+                x: 29
+                y: 480
+                width: 290
+                height: 48
+
                 onClicked: {
-                    confirmYourIdentity.visible = false
-                    terms.visible = true
+                    stackView.push("SignUpPage.qml")
                 }
             }
         }
@@ -383,6 +613,32 @@ Flickable {
                 font.weight: 700
             }
 
+            Image {
+                id: boxTerms
+                visible: false
+                x: 20
+                y: 343
+                width: 21
+                height: 21
+                source: "assets/CheckBoxTerms.png"
+            }
+
+            MouseArea {
+                x: 20
+                y: 343
+                width: 21
+                height: 21
+
+                onClicked: {
+                    boxSelected = !boxSelected
+                    if(boxSelected === true) {
+                        boxTerms.visible = true
+                    } else {
+                        boxTerms.visible = false
+                    }
+                }
+            }
+
             MouseArea {
                 x: 29
                 y: 466
@@ -390,7 +646,20 @@ Flickable {
                 height: 48
 
                 onClicked: {
-                    stackView.push("App.qml")
+                    if(boxSelected === true) {
+                        stackView.push("App.qml")
+                    }
+                }
+            }
+
+            MouseArea {
+                x: 29
+                y: 528
+                width: 290
+                height: 48
+
+                onClicked: {
+                    stackView.push("PrivacyStatement.qml")
                 }
             }
         }
