@@ -95,9 +95,112 @@ Flickable {
             source: "assets/Profile Editor.png"
 
             //prefered name
+            Rectangle {
+                x: 22
+                y: 103
+                width: 304
+                height: 47
+                radius: 7
+                color: "white"
+                border.color: "#606D76"
+
+                TextInput {
+                    id: myName
+                    x: 10
+                    y: 0
+                    width: 304 - 10
+                    height: 47
+
+                    color: "#9B9B9B"
+                    text: qsTr("Prefered Name")
+                    font.pixelSize: 14
+                    horizontalAlignment: Text.AlignLeft
+                    verticalAlignment: Text.AlignVCenter
+                    font.family: "Fira Sans"
+                    font.weight: 400
+                }
+            }
+
             //email
+            Rectangle {
+                x: 22
+                y: 186
+                width: 304
+                height: 47
+                radius: 7
+                color: "white"
+                border.color: "#606D76"
+
+                TextInput {
+                    id: myEmail
+                    x: 10
+                    y: 0
+                    width: 304 - 10
+                    height: 47
+
+                    color: "#9B9B9B"
+                    text: qsTr("Email")
+                    font.pixelSize: 14
+                    horizontalAlignment: Text.AlignLeft
+                    verticalAlignment: Text.AlignVCenter
+                    font.family: "Fira Sans"
+                    font.weight: 400
+                }
+            }
+
             //mobile number
+            Rectangle {
+                x: 22
+                y: 269
+                width: 304
+                height: 47
+                radius: 7
+                color: "white"
+                border.color: "#606D76"
+
+                TextInput {
+                    id: myNumber
+                    x: 10
+                    y: 0
+                    width: 304 - 10
+                    height: 47
+
+                    color: "#9B9B9B"
+                    text: qsTr("Mobile Number")
+                    font.pixelSize: 14
+                    horizontalAlignment: Text.AlignLeft
+                    verticalAlignment: Text.AlignVCenter
+                    font.family: "Fira Sans"
+                    font.weight: 400
+                }
+            }
+
             //password
+            Rectangle {
+                x: 22
+                y: 352
+                width: 304
+                height: 47
+                radius: 7
+                color: "white"
+                border.color: "#606D76"
+
+                TextInput {
+                    id: myPassword
+                    x: 10
+                    y: 0
+                    width: 304 - 10
+                    height: 47
+
+                    color: "#9B9B9B"
+                    text: qsTr("Password")
+                    font.pixelSize: 14
+                    horizontalAlignment: Text.AlignLeft
+                    verticalAlignment: Text.AlignVCenter
+                    font.family: "Fira Sans"
+                    font.weight: 400
+                }
+            }
 
             MouseArea {
                 x: 253

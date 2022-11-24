@@ -2,10 +2,10 @@
 var title = "My Covid Record"
 
 //Prefered Name
-var name = ""
+var name = "Prefered Name"
 //Email
-var email = ""
+var email = "Email"
 //Mobile Number
-var number = ""
+var number = "Mobile Number"
 //Password
-var password = ""
+var password = "Password"
