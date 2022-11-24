@@ -105,7 +105,6 @@ Flickable {
                         if(myPassword.text !== "Password") {
                             myEmail.color = "#BDBDBD"
                             myPassword.color = "#BDBDBD"
-                            window.setLogin(myEmail.text, myPassword.text)
                             stackView.push("App.qml")
                         }
                     } else {
@@ -248,7 +247,6 @@ Flickable {
                         if(myRealMePassword.text !== "Password") {
                             myUsername.color = "#BDBDBD"
                             myRealMePassword.color = "#BDBDBD"
-                            window.setLogin(myUsername.text, myRealMePassword.text)
                             stackView.push("App.qml")
                         }
                     } else {

@@ -84,6 +84,7 @@ Flickable {
             }
         }
 
+        //editable module
         Image {
             id: p2
             visible: false
@@ -92,6 +93,11 @@ Flickable {
             width: 347
             height: 417
             source: "assets/Profile Editor.png"
+
+            //prefered name
+            //email
+            //mobile number
+            //password
 
             MouseArea {
                 x: 253

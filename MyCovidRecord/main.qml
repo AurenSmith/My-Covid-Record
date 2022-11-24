@@ -11,11 +11,6 @@ Window {
     visible: true
     title: qsTr(Script.title)
 
-    function setLogin(email, password) {
-        Script.email = email
-        Script.password = password
-    }
-
     property int pos: 294
     property string homeColor: "#ffffff"
     property string contactColor: "#002e6e"

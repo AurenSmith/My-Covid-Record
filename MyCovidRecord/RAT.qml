@@ -109,6 +109,30 @@ Flickable {
                 }
             }
 
+            //mobile number
+            Rectangle {
+                x: 97
+                y: 171
+                width: 230
+                height: 45
+                radius: 7
+                color: "white"
+//                border.color: "#606D76"
+
+                TextInput {
+                    id: myNumber
+                    anchors.fill: parent
+                    color: "#9B9B9B"
+
+                    text: qsTr("+64 21 123 4567")
+                    font.pixelSize: 14
+                    horizontalAlignment: Text.AlignLeft
+                    verticalAlignment: Text.AlignVCenter
+                    font.family: "Inter"
+                    font.weight: 400
+                }
+            }
+
             MouseArea {
                 x: 38
                 y: 274
@@ -165,7 +189,11 @@ Flickable {
                     height: 48
 
                     onClicked: {
-                        stackView.push("RATResults.qml")
+                        if(myNumber.text !== "") {
+                            stackView.push("RATResults.qml")
+                        } else {
+                            myNumber.color = "red"
+                        }
                     }
                 }
             }
