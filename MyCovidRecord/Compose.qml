@@ -63,6 +63,29 @@ Flickable {
             height: 365
             source: "assets/Compose.png"
 
+            Rectangle {
+                x: 0
+                y: 0
+                width: 348
+                height: 302
+                radius: 23
+                color: "white"
+
+                TextArea {
+                    x: 15
+                    y: 15
+                    width: 348 - 15
+                    height: 302 - 15
+                    color: "#BDBDBD"
+                    text: qsTr("Compose your message here...")
+                    font.pixelSize: 16
+                    horizontalAlignment: Text.AlignLeft
+                    verticalAlignment: Text.AlignTop
+                    font.family: "Inter"
+                    font.weight: 500
+                }
+            }
+
             MouseArea {
                 x: 28
                 y: 317
