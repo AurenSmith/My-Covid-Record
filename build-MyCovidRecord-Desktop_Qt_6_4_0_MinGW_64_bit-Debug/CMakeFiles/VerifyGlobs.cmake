@@ -157,10 +157,6 @@ set(OLD_GLOB
   "C:/Users/Auren/Documents/GitHub/My-Covid-Record/MyCovidRecord/Test.qml"
   "C:/Users/Auren/Documents/GitHub/My-Covid-Record/MyCovidRecord/VaccineDropdown.qml"
   "C:/Users/Auren/Documents/GitHub/My-Covid-Record/MyCovidRecord/Vaccines.qml"
-  "C:/Users/Auren/Documents/GitHub/My-Covid-Record/MyCovidRecord/imports/UntitledProject/Constants.qml"
-  "C:/Users/Auren/Documents/GitHub/My-Covid-Record/MyCovidRecord/imports/UntitledProject/DirectoryFontLoader.qml"
-  "C:/Users/Auren/Documents/GitHub/My-Covid-Record/MyCovidRecord/imports/UntitledProject/EventListModel.qml"
-  "C:/Users/Auren/Documents/GitHub/My-Covid-Record/MyCovidRecord/imports/UntitledProject/EventListSimulator.qml"
   "C:/Users/Auren/Documents/GitHub/My-Covid-Record/MyCovidRecord/main.qml"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
