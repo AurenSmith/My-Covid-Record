@@ -1,4 +1,10 @@
-Side Bar Menu Implemented with animations and interactions
+To open the application, go to:
+My Covid Record Executable\MyCovidRecord.exe
+
+If you wish to view the source code, go to:
+MyCovidRecord\
+
+
 
 Multiple pages idea:
 
